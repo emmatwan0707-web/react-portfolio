@@ -9,3 +9,7 @@ body {
   min-height: 100vh;
 }
 
+::selection {
+  background: theme('colors.amber.100');
+  color: theme('colors.amber.800');
+}
