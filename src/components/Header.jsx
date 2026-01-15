@@ -15,9 +15,10 @@ const Header = () => {
                 className="w-11 h-11 object-contain rounded-full gap-10"
             />
             <ul className="flex gap-4 text-sm text-gray-700 font-medium">
+                <li className="cursor-pointer  text-gray-700 hover:text-black text-sm">Emma's protofolio</li>
                 <li className="cursor-pointer  text-gray-700 hover:text-black text-sm">About me</li>
                 <li className="cursor-pointer  text-gray-700 hover:text-black text-sm">Projects</li>
-                <li className="cursor-pointer  text-gray-700 hover:text-black text-sm">Skills</li>
+
                 <li className="cursor-pointer  text-gray-700 hover:text-black text-sm">Contact</li>
             </ul>
         <div className="flex gap-4">
