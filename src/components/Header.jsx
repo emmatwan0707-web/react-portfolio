@@ -2,12 +2,14 @@ import React from 'react';
 import EmmaImg from '../assets/Emma.png';
 import github from '../assets/GitHub.png';
 import linkedin from '../assets/LinkedIn.png';
+import { Link } from 'react-scroll';
 
 const Header = () => {
     return (
 
 
-    <nav className="relative flex items-center justify-between px-6 py-4 bg-[#F5F5F7] -mt-[5px]">
+    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-2 bg-[#F5F5F7] shadow-md
+">
 
         <img
                 src={EmmaImg}
@@ -15,11 +17,26 @@ const Header = () => {
                 className="w-11 h-11 object-contain rounded-full gap-10"
             />
             <ul className="flex gap-4 text-sm text-gray-700 font-medium">
-                <li className="cursor-pointer  text-gray-700 hover:text-black text-sm">Emma's portofolio</li>
-                <li className="cursor-pointer  text-gray-700 hover:text-black text-sm">About me</li>
-                <li className="cursor-pointer  text-gray-700 hover:text-black text-sm">Projects</li>
-
-                <li className="cursor-pointer  text-gray-700 hover:text-black text-sm">Contact</li>
+                <li>
+                    <Link to="hero" smooth={true} duration={500} className="cursor-pointer hover:text-amber-500">
+                        Emma's portfolio
+                    </Link>
+                </li>
+                <li>
+                    <Link to="about" smooth={true} duration={500} className="cursor-pointer hover:text-amber-500">
+                        About me
+                    </Link>
+                </li>
+                <li>
+                    <Link to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-amber-500">
+                        Projects
+                    </Link>
+                </li>
+                <li>
+                    <Link to="contact" smooth={true} duration={500} className="cursor-pointer hover:text-amber-500">
+                        Contact
+                    </Link>
+                </li>
             </ul>
         <div className="flex gap-4">
             <div className="flex gap-4">

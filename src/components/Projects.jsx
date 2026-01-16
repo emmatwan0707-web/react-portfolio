@@ -29,7 +29,7 @@ const Projects = () => {
     ];
 
     return (
-        <div>
+        <div id="projects">
         <h1 className='ml-20 text-4xl font-bold text-amber-500 mb-5'>Recent Projects</h1>
         <div className="flex flex-wrap justify-evenly gap-6 mb-10 ">
             {projectList.map((project) => (

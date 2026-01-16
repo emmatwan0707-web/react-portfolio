@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
     return (
-        <div className="flex flex-col-reverse md:flex-row items-start px-6 md:px-8 pt-22 pb-32 mx-auto gap-0">
+        <div id='hero' className="flex flex-col-reverse md:flex-row items-start px-6 md:px-8 pt-22 pb-32 mx-auto gap-0 mt-15">
 
             <div className='text-center md:text-left md:max-w-lg md:ml-30 flex-1'>
                 <h2 className='text-3xl text-gray-500'>Hi, I'm A</h2>
