@@ -3,9 +3,7 @@ import burgerPic from '../assets/burger.png';
 import moviePic from '../assets/moviePic.png';
 import recipePic from '../assets/recipePic.png';
 
-
 const Projects = () => {
-    // 你可以用数组存项目数据
     const projectList = [
         {
             id:1,
@@ -25,32 +23,35 @@ const Projects = () => {
             description: "A fast and intuitive recipe discovery tool using React to fetch real-time culinary data. It provides a seamless user interface with Tailwind layout and fluid list transitions via Framer Motion.",
             imageUrl: recipePic,
         },
-
     ];
 
     return (
-        <div id="projects">
-        <h1 className='ml-20 text-4xl font-bold text-amber-500 mb-5'>Recent Projects</h1>
-        <div className="flex flex-wrap justify-evenly gap-6 mb-10 ">
-            {projectList.map((project) => (
-                <div
-                    key={project.id}
-                    className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden w-full md:w-1/4 hover:scale-105 transition-transform duration-300"
-                >
-                    <img
-                        src={project.imageUrl}
-                        alt={project.title}
-                        className="w-full h-48 object-cover"
-                    />
-                    <div className="p-4">
-                        <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                        <p className="text-gray-600">{project.description}</p>
+        <div id="projects" className="px-4 sm:px-6 md:px-20 py-16 max-w-7xl mx-auto">
+            <h1 className='text-3xl sm:text-4xl md:text-4xl font-bold text-amber-500 mb-8 text-center md:text-left'>
+                Recent Projects
+            </h1>
+
+            {/* 使用 Grid 布局 */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16">
+                {projectList.map((project) => (
+                    <div
+                        key={project.id}
+                        className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                    >
+                        <img
+                            src={project.imageUrl}
+                            alt={project.title}
+                            className="w-full h-48 sm:h-56 md:h-48 lg:h-52 object-cover"
+                        />
+                        <div className="p-4">
+                            <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
+                            <p className="text-gray-600 text-sm sm:text-base">{project.description}</p>
+                        </div>
                     </div>
-                </div>
-            ))}
-        </div>
+                ))}
+            </div>
         </div>
     )
-
 }
-export default Projects
+
+export default Projects;
