@@ -18,22 +18,22 @@ const Header = () => {
             />
             <ul className="flex gap-4 text-sm text-gray-700 font-medium">
                 <li>
-                    <Link to="hero" smooth={true} duration={500} className="cursor-pointer hover:text-amber-500">
+                    <Link to="hero" smooth={true} duration={500} offset={-60} className="cursor-pointer hover:text-amber-500">
                         Emma's portfolio
                     </Link>
                 </li>
                 <li>
-                    <Link to="about" smooth={true} duration={500} className="cursor-pointer hover:text-amber-500">
+                    <Link to="about" smooth={true} duration={500} offset={-90} className="cursor-pointer hover:text-amber-500">
                         About me
                     </Link>
                 </li>
                 <li>
-                    <Link to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-amber-500">
+                    <Link to="projects" smooth={true} duration={500} offset={-90} className="cursor-pointer hover:text-amber-500">
                         Projects
                     </Link>
                 </li>
                 <li>
-                    <Link to="contact" smooth={true} duration={500} className="cursor-pointer hover:text-amber-500">
+                    <Link to="contact" smooth={true} duration={500} offset={-60} className="cursor-pointer hover:text-amber-500">
                         Contact
                     </Link>
                 </li>
