@@ -1,7 +1,7 @@
 import React from 'react';
 import burgerPic from '../assets/burger.png';
 import moviePic from '../assets/moviePic.png';
-import recipePic from '../assets/recipePic.png';
+import mapPic from '../assets/mapPic.png';
 
 const Projects = () => {
     const projectList = [
@@ -19,9 +19,9 @@ const Projects = () => {
         },
         {
             id:3,
-            title: "Recipe Search Web App",
-            description: "A fast and intuitive recipe discovery tool using React to fetch real-time culinary data. It provides a seamless user interface with Tailwind layout and fluid list transitions via Framer Motion.",
-            imageUrl: recipePic,
+            title: "Global Projection Tracker",
+            description: "A production-ready platform built for the NGO China Action to visualize global activism. Using React and Framer Motion, it features an interactive SVG map with \"breathing\" light markers to document real-world projection events in NYC and Berlin.",
+            imageUrl: mapPic,
         },
     ];
 
@@ -41,7 +41,7 @@ const Projects = () => {
                         <img
                             src={project.imageUrl}
                             alt={project.title}
-                            className="w-full h-48 sm:h-56 md:h-48 lg:h-52 object-cover"
+                            className="w-full h-48 sm:h-56 md:h-48 lg:h-50 object-contain"
                         />
                         <div className="p-4">
                             <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
