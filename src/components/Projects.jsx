@@ -7,14 +7,14 @@ const Projects = () => {
     const projectList = [
         {
             id:1,
-            title: "Emma Burger Website",
-            description: "A responsive restaurant landing page built with React and Tailwind CSS. It features smooth scrolling and menu animations powered by Framer Motion for an engaging dining experience.",
+            title: "Burger Restaurant Website",
+            description: "A responsive burger restaurant landing page built with React and Tailwind CSS. It features smooth scrolling and menu animations powered by Framer Motion for an customer engaging dining experience.",
             imageUrl: burgerPic,
         },
         {
             id:2,
             title: "Movie Theater Webpage",
-            description: "A dynamic cinema platform showcasing trending movies with a sleek UI. It utilizes Framer Motion for interactive seat selection and Tailwind CSS for a modern, mobile-first design.",
+            description: "A high-performance movie discovery platform inspired by AMC Theatres. Built with React 18/19, Tailwind CSS v4, and TMDB REST API. Features real-time data fetching, immersive dark-mode UI, and responsive layouts.",
             imageUrl: moviePic,
         },
         {
