@@ -20,7 +20,7 @@ const Projects = () => {
         {
             id:3,
             title: "Global Projection Tracker",
-            description: "A production-ready platform built for the NGO China Action to visualize global activism. Using React and Framer Motion, it features an interactive SVG map with \"breathing\" light markers to document real-world projection events in NYC and Berlin.",
+            description: "A production-ready platform built for the NGO China Action to visualize global activism. Using React and Framer Motion, it features an interactive SVG map with \"breathing\" light markers to document real-world projection events.",
             imageUrl: mapPic,
         },
     ];
@@ -38,15 +38,23 @@ const Projects = () => {
                         key={project.id}
                         className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                     >
+                        <div className="w-full aspect-video overflow-hidden bg-gray-100">
                         <img
                             src={project.imageUrl}
                             alt={project.title}
-                            className="w-full h-48 sm:h-56 md:h-48 lg:h-50 object-contain"
+                            className="w-full h-full object-cover object-left-top hover:scale-110 transition-transform duration-500"
                         />
+                        </div>
                         <div className="p-4">
                             <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
                             <p className="text-gray-600 text-sm sm:text-base">{project.description}</p>
+                            <div className="mt-auto pt-6">
+                                <span className="text-amber-500 font-semibold text-sm hover:underline cursor-pointer">
+                                    View Details →
+                                </span>
+                            </div>
                         </div>
+
                     </div>
                 ))}
             </div>
