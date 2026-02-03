@@ -1,7 +1,7 @@
 import React from 'react';
 import EmmaImg from '../assets/Emma.png';
-import github from '../assets/GitHub.png';
-import linkedin from '../assets/LinkedIn.png';
+import github from '../assets/github.png';
+import linkedin from '../assets/linkedin.png';
 import { Link } from 'react-scroll';
 
 const Header = () => {
