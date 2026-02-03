@@ -42,19 +42,26 @@ const Projects = () => {
                         className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                     >
                         <div className="w-full aspect-video overflow-hidden bg-gray-100">
-                        <img
-                            src={project.imageUrl}
-                            alt={project.title}
-                            className="w-full h-full object-cover object-left-top hover:scale-110 transition-transform duration-500"
-                        />
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="w-full aspect-video overflow-hidden bg-gray-100 block">
+                                <img
+                                    src={project.imageUrl}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover object-left-top hover:scale-110 transition-transform duration-500"
+                                />
+                            </a>
                         </div>
                         <div className="p-4">
                             <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
                             <p className="text-gray-600 text-sm sm:text-base">{project.description}</p>
                             <div className="mt-auto pt-6">
-                                <span className="text-amber-500 font-semibold text-sm hover:underline cursor-pointer">
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-amber-500 font-semibold text-sm hover:underline inline-block"
+                                >
                                     View Details →
-                                </span>
+                                </a>
                             </div>
                         </div>
 
