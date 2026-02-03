@@ -10,18 +10,21 @@ const Projects = () => {
             title: "Burger Restaurant Website",
             description: "A responsive burger restaurant landing page built with React and Tailwind CSS. It features smooth scrolling and menu animations powered by Framer Motion for an customer engaging dining experience.",
             imageUrl: burgerPic,
+            link: "https://emmaburger-website-mh3i.vercel.app/"
         },
         {
             id:2,
             title: "Movie Theater Webpage",
             description: "A high-performance movie discovery platform inspired by AMC Theatres. Built with React 18/19, Tailwind CSS v4, and TMDB REST API. Features real-time data fetching, immersive dark-mode UI, and responsive layouts.",
             imageUrl: moviePic,
+            link: "https://react-movie-7kdczh500-emmas-projects-69ae0633.vercel.app/"
         },
         {
             id:3,
             title: "Global Projection Tracker",
             description: "A production-ready platform built for the NGO China Action to visualize global activism. Using React and Framer Motion, it features an interactive SVG map with \"breathing\" light markers to document real-world projection events.",
             imageUrl: mapPic,
+            link: "https://react-map-global-3y1p.vercel.app/"
         },
     ];
 
