@@ -5,6 +5,7 @@ import Projects from "./components/Projects.jsx";
 import Contacts from "./components/Contacts.jsx";
 import Footer from "./components/Footer.jsx";
 
+
 function App() {
     return (
         <div>

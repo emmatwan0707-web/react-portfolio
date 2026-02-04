@@ -2,6 +2,7 @@ import React from 'react'
 import profilePic from '../assets/profile-pic.jpg'
 import { Typewriter } from 'react-simple-typewriter'
 
+
 const Hero = () => {
     return (
         <div id='hero' className="flex flex-col-reverse md:flex-row items-center md:items-start px-6 md:px-8 pt-28 md:pt-40 pb-20 md:pb-32 mx-auto gap-10 md:gap-0">
@@ -32,8 +33,13 @@ const Hero = () => {
                     I build modern and responsive <br />web applications with React and Tailwind.
                 </p>
 
-                <a href='#' target="_blank" aria-label="Download Emma Duan CV" className="inline-block mt-8 px-8 py-3 bg-amber-500 hover:bg-amber-600 shadow-orange-200 text-white font-bold rounded-full transition duration-300 cursor-pointer outline-none">
-                    Download CV
+                <a
+                    href="/Emma_Duan_Resume.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-8 px-8 py-3 bg-amber-500 hover:bg-amber-600 shadow-lg text-white font-bold rounded-full transition duration-300 cursor-pointer"
+                >
+                    View & Download CV
                 </a>
             </div>
 
