@@ -1,6 +1,7 @@
 import React from 'react'
 import profilePic from '../assets/profile-pic.jpg'
 import { Typewriter } from 'react-simple-typewriter'
+import Emma_Duan_Resume from "../assets/Emma_Duan_Resume.png";
 
 
 const Hero = () => {
@@ -34,7 +35,7 @@ const Hero = () => {
                 </p>
 
                 <a
-                    href="/Emma_Duan_Resume.png"
+                    href={Emma_Duan_Resume}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-8 px-8 py-3 bg-amber-500 hover:bg-amber-600 shadow-lg text-white font-bold rounded-full transition duration-300 cursor-pointer"
